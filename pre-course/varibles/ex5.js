@@ -23,7 +23,7 @@ Think first before you test it out in code. Ask if you don't understand why cert
 console.log((5 > 2) && false)
 console.log(!("knife" === "sword"))
 console.log((1 < 2) || (-1 > -1) || !false)
-console.log("")//nothing
+console.log("")//nothing is also false if put in if 
 console.log((31 % 5) == "1")
 console.log(
     (31 % 5) == "1")
