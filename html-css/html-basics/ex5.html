@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>"Alex personal Intorduction"</title>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Professional Information:</legend>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="fname" value="your name"><br><br>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="example@fs.com"><br><br>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" value="(555)-093485093"><br><br>
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+        <fieldset>
+            <legend>Message Details:</legend>
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="select a subject">select a subject</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br>
+            <label for="Priority">Priority:</label><br>
+            <input type="radio" id="low" name="Priority" value="low">
+            <label for="low">Low</label>
+            <input type="radio" id="medium" name="Priority" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="high" name="Priority" value="high">
+            <label for="high">High</label>
+            <br><br>
+            <label for="name">message:</label><br>
+            <textarea name="message" rows="10" cols="30">Youre massage...</textarea>
+        </fieldset>
+    </form>
+    <form action="/action_page.php">
+
+        <fieldset>
+            <legend>Preferences:</legend>
+
+            <input type="checkbox" id="subscribe" name="subscribe" value="Subscribe to newsletter">
+            <label for="subscribe">Subscribe to newsletter</label><br><br>
+            <label for="Contact">Contact Methode:</label>
+            <select id="subject" name="Contact">
+                <option value="email">email</option>
+                <option value="phone">phone</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select><br>
+
+    </form>
+    </fieldset>
+    </form>
+
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Reset">
+
+</body>
+
+</html>
