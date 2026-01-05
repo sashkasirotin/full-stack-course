@@ -1,28 +1,35 @@
 .yahoo {
-    background-color: yellow;
+    /*background-color: yellow;
     color: aqua;
     padding: 10px;
-
+*/
 
 }
 
 .youtube {
-    background-color: yellow;
+    /*background-color: yellow;
     color: aqua;
     box-sizing: border-box;
     padding: 10px;
-
+*/
 
 }
 
 .facebook {
-    background-color: yellow;
+    /* background-color: yellow;
     color: aqua;
     padding: 10px;
-
+*/
 
 }
 
 a {
     text-decoration: none;
+}
+
+a img {
+    width: 100px;
+    /* Sets a fixed width */
+    height: auto;
+    /* Sets a fixed height (may distort aspect ratio if not proportional) */
 }
