@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.league-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #333;
+
+    text-align: center;
+}
+
+.league-table th,
+.league-table td {
+    padding: 8px;
+    border: none;
+    /* OUTSIDE border */
+
+}
+
+.league-table thead {
+    background-color: #4CAF50;
+    border-bottom: 1px solid #333;
+    /* add row lines only */
+    color: white;
+}
+
+
+.league-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.league-table tbody td {
+    background-color: #ddd;
+    border-bottom: 1px solid #333;
+
+}
