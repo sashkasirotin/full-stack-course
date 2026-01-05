@@ -1,0 +1,28 @@
+.yahoo {
+    background-color: yellow;
+    color: aqua;
+    padding: 10px;
+
+
+}
+
+.youtube {
+    background-color: yellow;
+    color: aqua;
+    box-sizing: border-box;
+    padding: 10px;
+
+
+}
+
+.facebook {
+    background-color: yellow;
+    color: aqua;
+    padding: 10px;
+
+
+}
+
+a {
+    text-decoration: none;
+}
