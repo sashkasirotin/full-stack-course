@@ -1,0 +1,38 @@
+/* Make body take the full viewport width/height */
+body {
+    background-image: url("https://thumbs.dreamstime.com/z/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg?ct=jpeg");
+
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Full background image covering the area */
+.header-container {
+    /* replace with your image */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    /* adjust as needed */
+    position: relative;
+}
+
+/* Semi-transparent title */
+.overlay-title {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Solid color block with title */
+.solid-title {
+    background-color: purple;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 20px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+}
