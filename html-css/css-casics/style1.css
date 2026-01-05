@@ -1,0 +1,17 @@
+.hello {
+    color: green;
+    font-size: 50;
+    font-weight: bold
+}
+
+.world {
+    color: aqua;
+    font-size: larger;
+    font-style: unset;
+    font-family: sans-serif;
+}
+
+.new {
+    color: blue;
+    font-style: italic;
+}
