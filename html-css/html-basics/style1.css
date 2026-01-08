@@ -1,0 +1,26 @@
+h1 {
+    color: blue;
+    border-bottom: 15px;
+
+}
+
+strong {
+    color: purple;
+}
+
+h2 {
+    color: aqua;
+
+}
+
+hr {
+    color: brown;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+i {
+    color: gold;
+    background-color: blueviolet;
+
+}

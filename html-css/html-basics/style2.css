@@ -1,0 +1,39 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-decoration: solid;
+    text-decoration-thickness: calc();
+    color: brown;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h2 {
+    background-color: blueviolet;
+    border-left: 10px solid blue;
+    padding-left: 1%;
+
+}
+
+ul {
+    background-color: cadetblue;
+    text-decoration: solid;
+}
+
+.string {
+    color: gray;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ol {
+    background-color: cadetblue;
+    text-decoration: solid;
+}
+
+li>strong {
+    text-decoration: solid;
+    color: red;
+    font: bolder;
+    font-size: calc(50);
+}

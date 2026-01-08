@@ -1,0 +1,158 @@
+    .heading {
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    .tomato {
+        color: tomato;
+    }
+
+    .gross-color {
+        color: #a3c010;
+    }
+
+    .nice-color {
+        color: #03bbbb;
+    }
+
+    .nav-bar {
+        position: fixed;
+    }
+
+    body {
+        background-color: #ddd;
+    }
+
+    #about-me {
+        font-family: sans-serif;
+        color: #03bbbb;
+    }
+
+    button:hover {
+        background-color: blue;
+        color: black;
+        border: 1px solid black;
+    }
+
+    p:nth-child(2) {
+        background: red;
+    }
+
+    /* All p elements that are direct descendants of a div are given green text
+    The p elements with "Some text", "Also direct", and "Yup, I'm green too" will become green - because they are all one level deep, i.e. direct children of the div. */
+
+    div>p {
+        color: green;
+    }
+
+    /* All p elements that within a div are given blue text */
+    div p {
+        color: blue;
+    }
+
+    body {
+        background-color: #ddd;
+    }
+
+    nav {
+        background-color: rgb(51, 51, 51)
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    li:first-child {
+        color: green;
+    }
+
+    /*If we select an element without being specific to its "class", "id" or other attributes, this is the least specific. This selector will be easily overriden.
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      border: 5px solid magenta;
+    }
+      
+    
+    If we were styling the div above, this class selector would override its styles because it's more specific.
+
+    .songs-container {
+      background-color: green;
+      border: 25px solid red;
+    }
+      If the same div had an id, the following would override both of the stylings above. This is because id's must be unique and are therefore more specific.
+
+    #rock-songs {
+      background-color: orange;
+      border: 10px solid blue;
+    }
+      4. Chained selectors
+
+Note: Combining CSS selectors also affects the specificity of a property. For example, a property with both ID and attribute selectors has more specificity than a property with just an ID selector.
+
+    .panel #rock-songs {
+      background-color: gray;
+    }
+    
+    #rock-songs {
+      background-color: orange;
+      border: 10px solid blue;
+   }
+      In this case the background will be gray. The first selector ".panel #rock-songs" contains 2 levels, while the "#rock-songs" contains only 1.
+
+5. Inline Stlyes
+
+This is where you use the HTML "style" attribute to add CSS. The following would override the background color for our div example:
+
+    <div style="background-color: pink;" id="rock-songs" class="songs-container">
+      
+    </div>
+    Generally, we avoid writing CSS directly inside the HTML - but know that it is possible.
+
+6. Using !important (most specific)
+
+Using the keyword "!important" in your CSS overrides all styles regardless. This should be used very sparingly if at all. The following would override the background color for our previous styles:
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: red !important;
+      border: 5px solid magenta;
+    }
+      *** Bottom of the File/*
+      
+      
+      *** Bottom of the File**
+
+Lastly, when two conflicting style rules have the same specificity, the one that's defined lower down in your CSS file takes precedent. Take a look at this example here. Notice that the div is blue because that is the style that is defined further down in the file.
+
+This rule also applies across multiple files. If you link several CSS files to your HTML page the links further down the page will be more important.
+
+Example:
+
+Take a look here to see an example in action. Play around with it - for example, remove the !important, change the order, just be curious and try things - you're not going to break the internet!
+ div {
+      height: 50px;
+      background-color: #8e44ad;
+    }
+      
+    On the other hand, if we had a span element with nothing inside, with the following CSS (where we do specify the width):
+
+    span {
+      height: 50px;
+      width: 50px;
+      background-color: #8e44ad;
+    }
+      Then we wouldn't see anything - and that's because span elements are inline by default - that means their size is only affected by the content inside of them.
+
+We can use the display property like this:
+
+    span {
+      height: 50px;
+      width: 50px;
+      background-color: #8e44ad;
+      display: inline-block;
+    }
+      Elements that are inline-block will still only take up exactly the space they need, and no more. The difference with inline elements is that these are only affected by their content, and not by other CSS properties.*/

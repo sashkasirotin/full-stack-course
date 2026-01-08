@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+thead>tr>th {
+    color: lightgreen;
+}
+
+tbody>tr>td {
+    color: white;
+}
+
+tbody>tr>td:nth-child(1) {
+    color: pink;
+}
