@@ -1,0 +1,27 @@
+/* wrap the two elements */
+.wrapper {
+    display: flex;
+    /* layout horizontally */
+    height: 200px;
+    /* just for example */
+}
+
+/* fixed sidebar */
+.sidebar {
+    width: 80%;
+    /* fixed 200px wide */
+    background: lightgray;
+}
+
+/* content fills the rest of the space */
+.content {
+    width: calc(100% - 80%);
+    /* remaining space */
+    background: lightblue;
+}
+
+h1 {
+    font-style: italic;
+    color: green;
+    text-align: center;
+}

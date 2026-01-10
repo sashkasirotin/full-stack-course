@@ -1,0 +1,28 @@
+/* let the browser include padding/border in width */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* container centered and 40% of viewport width */
+.container {
+    width: 40%;
+    margin: 40px auto;
+    /* optional: centers the box on the page */
+    display: flex;
+    /* put the children in a row */
+    border: 2px solid #800040;
+    /* container border for visibility */
+}
+
+/* each box takes 1/3 of the container */
+.container .box {
+    width: calc(100% / 3);
+    /* calc used to split evenly */
+    padding: 20px;
+    border: 1px solid black;
+    background: pink;
+    text-align: center;
+    font-size: 1.2rem;
+}
