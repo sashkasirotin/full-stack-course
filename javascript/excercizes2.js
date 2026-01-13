@@ -14,20 +14,7 @@ D: 60-69
 F: Below 60
 let score = 85;
 // Your conditional code here
-Copy to clipboardErrorCopied
-Exercise 3
-Weather Decision Making. Create variables for temperature (in Celsius) and weather condition (sunny, rainy, cloudy). Use nested conditionals to decide what activity to recommend:
 
-If sunny and temp > 24°C: "Go to the beach"
-If sunny and temp 15-24°C: "Go for a walk"
-If sunny and temp < 15°C: "Stay inside and read"
-If rainy: "Watch a movie indoors"
-If cloudy and temp > 21°C: "Go hiking"
-If cloudy and temp <= 21°C: "Visit a museum"
-let temperature = 20;
-let weather = "sunny";
-// Your conditional code here
-Copy to clipboardErrorCopied
 Exercise 4
 Multiple Condition Validator. Create variables for username length, password length, and user age. Use logical operators (&&, ||, !) to check if a user can create an account:
 
@@ -92,6 +79,45 @@ switch (true) {
 
     default:
         console.log("F Looser")
+}
+
+/*Exercise 3
+Weather Decision Making. Create variables for temperature (in Celsius) and weather condition (sunny, rainy, cloudy). Use nested conditionals to decide what activity to recommend:
+
+If sunny and temp > 24°C: "Go to the beach"
+If sunny and temp 15-24°C: "Go for a walk"
+If sunny and temp < 15°C: "Stay inside and read"
+If rainy: "Watch a movie indoors"
+If cloudy and temp > 21°C: "Go hiking"
+If cloudy and temp <= 21°C: "Visit a museum"
+
+// Your conditional code here
+Copy to clipboardErrorCopied */
+
+let temperature = 20;
+let weather = "sunny";
+
+switch (true) {
+    case (weather === "sunny"):
+        if (temperature > 24) {
+            console.log("Go to the beach")
+        } else if (temperature >= 15 && temperature <= 24) {
+            console.log("Go for a walk")
+
+        }
+        else {
+            console.log("Stay inside and read")
+        }
+    case (weather === "rainy"):
+        console.log("Watch a movie indoors")
+    case (weather === "cloudy"):
+        if (temperature > 21) {
+            console.log("go hiking")
+        } else {
+            console.log("Visit a museum")
+        }
+
+        break;
 }
 
 
