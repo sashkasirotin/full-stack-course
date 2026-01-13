@@ -15,38 +15,7 @@ F: Below 60
 let score = 85;
 // Your conditional code here
 
-Exercise 4
-Multiple Condition Validator. Create variables for username length, password length, and user age. Use logical operators (&&, ||, !) to check if a user can create an account:
-
-Username must be at least 5 characters
-Password must be at least 8 characters
-User must be 13 or older
-Display specific error messages for each failed condition or success message if all pass
-let usernameLength = 6;
-let passwordLength = 7;
-let userAge = 15;
-// Your conditional code here
-Copy to clipboardErrorCopied
-Exercise 5:
-Complex Business Logic. Create variables for customer type (regular, premium, vip), purchase amount, and day of week. Calculate discount using nested conditionals and ternary operators:
-
-VIP customers: 20% discount always
-Premium customers: 15% on weekends, 10% on weekdays
-Regular customers: 10% if purchase > $100, 5% if purchase > $50, 0% otherwise
-Weekends are represented by day 6 (Saturday) or 0 (Sunday)
-let customerType = "premium";
-let purchaseAmount = 150;
-let dayOfWeek = 6; // 0 = Sunday, 1 = Monday, etc.
-// Your conditional code here
-Copy to clipboardErrorCopied
-Exercise 6
-Leap Year Calculator. Create a variable for a year and determine if it's a leap year using conditional statements. A year is a leap year if:
-
-It's divisible by 4 AND
-If it's divisible by 100, then it must also be divisible by 400
-let year = 2024;
-// Your conditional code here
-// Examples: 2024 = leap, 1900 = not leap, 2000 = leap, 2023 = not leap */
+*/
 
 //ex1
 const age = 17
@@ -55,6 +24,7 @@ if (age > 16) {
 } else {
     console.log("no booz for ya mate")
 }
+
 //ex2
 let grade = 85
 switch (true) {
@@ -120,7 +90,66 @@ switch (true) {
         break;
 }
 
+/*Exercise 4
+Multiple Condition Validator. Create variables for username length, password length, and user age. Use logical operators (&&, ||, !) to check if a user can create an account:
 
+Username must be at least 5 characters
+Password must be at least 8 characters
+User must be 13 or older
+Display specific error messages for each failed condition or success message if all pass*/
+let usernameLength = 3;
+let passwordLength = 9;
+let userAge = 15;
+
+
+if (usernameLength >= 5 && passwordLength >= 8 && userAge >= 13) {
+    console.log("user can create an account")
+} else if (!userAge >= 13 || passwordLength < 8) {
+    console.error("account can not be created due to wrong conditions")
+
+} else if (usernameLength < 5) {
+    console.error('username must be at least 5 charecters now it is only: ' + usernameLength)
+
+}
+
+/*Exercise 5:
+Complex Business Logic. Create variables for customer type (regular, premium, vip), purchase amount, and day of week. Calculate discount using nested conditionals and ternary operators:
+
+VIP customers: 20% discount always
+Premium customers: 15% on weekends, 10% on weekdays
+Regular customers: 10% if purchase > $100, 5% if purchase > $50, 0% otherwise
+Weekends are represented by day 6 (Saturday) or 0 (Sunday)
+ */
+
+let customerType = "Regular";
+let purchaseAmount = 150;
+let dayOfWeek = 5; // 0 = Sunday, 1 = Monday, etc.
+
+let primuimDiscountPracentage = (dayOfWeek === 6 || dayOfWeek === 0) ? 15 : 10
+let regularDiscountPracentage = 0
+let vipDiscountPracentage = 20
+
+switch (true) {
+    case (customerType === "Premium"):
+        console.log('premium dicount percentage is:' + primuimDiscountPracentage)
+        break;
+    case (customerType === "VIP"):
+        console.log("VIP dicount percentage is:" + vipDiscountPracentage)
+        break;
+    case (customerType === "Regular"):
+        if (purchaseAmount > 100) {
+            regularDiscountPracentage = 10;
+        }
+        else if (purchaseAmount > 50) {
+            regularDiscountPracentage = 5;
+
+        }
+        console.log("discount precentage for regular customer is:" + regularDiscountPracentage)
+
+        break
+    default:
+        break;
+}
 /*Exercise 6
 Leap Year Calculator. Create a variable for a year and determine if it's a leap year using conditional statements. A year is a leap year if:
 
